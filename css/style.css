@@ -1,0 +1,132 @@
+body {
+    margin-left: 10px;
+    color: #444444;
+    background-color: #E1EDED;
+}
+
+h1 {
+    font-size: 4em;
+}
+
+h2 {
+    font-size: 2em;
+}
+
+h3 {
+    
+}
+
+h4 {
+    display: inline;
+}
+
+h5 {
+    
+}
+
+
+
+.title_row {
+    text-align: center;
+    padding: 0px 0px 0px 0px;
+    background-color: #222222;
+    color: white;
+    /*margin-bottom: 10px;*/
+}
+
+.footer {
+    background-color: grey;
+    height: 100px;
+    margin-top: 10px;
+    background-color: #222222;
+}
+
+.photo {
+    max-width: 80%;
+}
+
+.photo_box {
+    /*text-align: center*/
+}
+
+.section {
+    color: #29ACB3;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    font-size: 2.5em;
+    /*text-align: center;*/
+}
+
+.about {
+    margin-top: 30px;
+    padding: 0px 20px 20px 20px;
+    border: 3px solid white;
+    border-radius: 10px;
+}
+
+.when {
+    margin-left: 10px;
+    color: grey;
+}
+
+.where {
+    color: grey;
+    display: block;
+    margin-top: -1px;
+    font-size: 0.9em;
+}
+
+
+.job {
+    
+    display: inline-block;
+    border-left: 4px solid #29ACB3;
+    margin-left: 8px;
+    padding: 0px 5px 5px 18px;
+    margin-top: -5px;
+
+}
+
+.company {
+    font-weight: bold;
+}
+
+.experience .section{
+    
+}
+
+.experience h4 {
+
+}
+
+.marker {
+    background-color: #F9F6EE;
+    border: 4px solid #29ACB3;
+    height: 20px;
+    width: 20px;
+    display: inline-block;
+    position: relative;
+    border-radius: 100px;
+    margin-right: 5px;
+    margin-top: 5px;
+    top: 3px;
+}
+
+.dot {
+    background-color: white;
+    
+}
+
+.job_position {
+    /*display: inline;*/
+    margin-top: -9px;
+}
+
+.job_title {
+    padding-top: 5px;
+}
+
+.experience h4:hover:before {
+    background: #29ACB3;
+}
+
