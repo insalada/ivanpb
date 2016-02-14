@@ -23,6 +23,7 @@
 	<script src="js/jquery-1.12.0.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
 	<script src="js/ivanpb.js"></script>    
+    <script src="js/tricks.js"></script>
     
 </head>
 <body ng-app="ivanpb" ng-controller="mainController">
@@ -33,25 +34,43 @@
     </div>
     
     <div class="row">
+        <nav class="navbar navbar-default navigation">
+                <div class="container-fluid">
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <ul class="nav navbar-nav mybar">
+                            <li><a href="#aboutme">About me</a></li>
+                            <li><a href="#experience">Experience</a></li>
+                            <li><a href="#education">Education</a></li>
+                            <li><a href="#contact">Presence</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+    </div>
+    
+    <div class="row">
         <div class="col-md-2"></div>
         <div class="col-md-8">
-            <section class="me">
+            <section class="me" id="aboutme">
                 <div class="row about">
                    <div class="section"></div>
                    <div class="col-md-5 photo_box">
                        <img src="img/ivan1.jpg" alt="me" class="img-rounded photo">
                     </div>
-                   <div class="cold-md-7">
+                   <div class="col-md-7">
                         <div class="section"><span class="glyphicon glyphicon-bookmark icon" aria-hidden="true"></span>About me</div>
                         <h3>Hi, I'm Iván, a resourceful Java Software Developer.</h3>
-                        <p>I'm a Java Software engineer most of the time focussed on J2SE Stand-alone and J2EE webapps in the backend. I Love challenges and keep learning.</p>
+                        <p>I'm a Java Software engineer most of the time focussed on J2SE Stand-alone and J2EE webapps in the backend. Lately improving some front-end skills and struggling a bit with AWS servers.</p>
+                        <p> I Love challenges and keep learning.</p>
                         <p>Amateur music producer, sound engineering in my free time :)</p>
                         <p>Also like writing, digital photography and fitness.</p>
+                        <div class="click"><img src="img/email.png" alt="github" class="about_icon"><a href="mailto:insalada@gmail.com" class="middle">Send me an e-mail</a></div>
+                        <div class="click"><img src="img/github.png" alt="github" class="about_icon"><a href="https://github.com/insalada" class="middle">Check out my GitHub account</a></div>
                    </div>
                 </div>
             </section>
             
-            <section class="experience">
+            <section class="experience"  id="experience">
                <div class="row about">
                 <div class="section"><span class="glyphicon glyphicon glyphicon glyphicon-briefcase
  icon" aria-hidden="true"></span>Experience</div>
@@ -64,14 +83,13 @@
                     <div class="job_title"><span class="company">MobileWater</span>
                     <span class="when">since July 2014</span></div>
                     <span class="where">Dordrecht, Netherlands</span>
-                    <p> I came to The Netherlands for applying this job and I am not even regretting the decision. I am in charge of making our products and services have the best technical solutions. The founders help me as well so I can say I am in a continuous learning process. Now struggling with web apps, running campaigns for <a href="https://www.vodafone.nl/">Vodafone NL</a> and other clients. Currently also trying to improve my frontend skills.</p>
+                    <p> I came to The Netherlands for applying this job and I am not even regretting the decision. I am in charge of making our products and services have the best technical solutions. The founders help me as well so I can say I am in a continuous learning process. Now struggling with web apps, running campaigns for <a href="https://www.vodafone.nl/">Vodafone NL</a> among other clients. Currently also trying to improve my frontend skills.</p>
                     <p>
                         <ul>
-                            <li>Java J2EE</li>
-                            <li>Spring Framework</li>
-                            <li>SVN, Maven, Apache Tomcat, Httpd</li>
-                            <li>HTML5, CSS3, AngularJS, Bootstrap</li>
-                            <li>MySql, Hibernate, AWS</li>
+                            <li>HTML5, CSS3, <a href="https://angularjs.org/">AngularJS</a>, <a href="http://getbootstrap.com/">Bootstrap</a></li>
+                            <li>Java J2EE, <a href="https://projects.spring.io/spring-framework/">Spring Framework</a>, <a href="http://hibernate.org/orm/">Hibernate</a></li>
+                            <li><a href="https://subversion.apache.org/">SVN</a>, <a href="https://maven.apache.org/">Maven</a>, <a href="http://tomcat.apache.org/">Apache Tomcat</a>, <a href="https://httpd.apache.org/">Httpd</a></li>
+                            <li><a href="https://www.mysql.com/">MySql</a>, <a href="https://aws.amazon.com/es/">AWS</a></li>
                         </ul>
                     </p>
                 </div>
@@ -84,13 +102,13 @@
                 <div class="job">
                     <div class="job_title"><span class="company">GFT</span>
                     <span class="when">April 2013 - July 2014</span></div>
-                    <span class="where">Valladolid</span>
+                    <span class="where">Barcelona</span>
                     <p>This was a big step on my career. I moved to Barcelona for working at GFT in a big team as an Analyst and Java Developer helping to deliver and improve <a href="https://www.db.com/unitedkingdom/">Deutsche Bank</a> products. My tasks were Programming, Code Reviewer, Code Merger, Modeling and Documentation, L3 Support, Java Profiling.</p>
                     <p>
                         <ul>
                             <li>Java J2EE</li>
-                            <li>Spring Framework, Hibernate</li>
-                            <li>Weblogic, Toad for Oracle, Eclipse, ALM</li>
+                            <li><a href="https://projects.spring.io/spring-framework/">Spring Framework</a>, <a href="http://hibernate.org/orm/">Hibernate</a></li>
+                            <li><a href="http://www.oracle.com/technetwork/middleware/weblogic/overview/index-085209.html">Weblogic</a>, <a href="http://software.dell.com/products/toad-for-oracle/">Toad for Oracle</a>, <a href="https://eclipse.org/">Eclipse</a>, <a href="http://www-01.ibm.com/software/rational/alm/">ALM</a></li>
                         </ul>
                     </p>
                 </div>
@@ -109,8 +127,7 @@
 gateways and its emulators for connecting to another external systems.</p>
                     <p>
                         <ul>
-                            <li>Java J2SE, Swing</li>
-                            <li>Struts</li>
+                            <li>Java J2SE, Swing, Struts</li>
                             <li>MySQL</li>
                         </ul>
                     </p>
@@ -126,13 +143,13 @@ gateways and its emulators for connecting to another external systems.</p>
                     <span class="company">Steria</span>
                     <span class="when">November 2008 - November 2011</span></div>
                     <span class="where">Valencia</span>
-                    <p>Moving to another city was a great experience. The fact of meeting new people and starting to be part of the design layer is always a good deal. At the beginning, I had to help my partners with Natural Adabas Language through a z/OS terminal for a few months. That was not the most funny thing to be honest, but later on I started to participate in the design of a new project for managing the payrolls N34, then I could
+                    <p>I continued my career as a Java Developer  in a big company where I could continue to learn in the backend side. I eventually moved to Valencia.  It was a great experience. The fact of meeting new people and starting to be part of the design layer is always a good deal. At the beginning, I had to help my partners with Natural Adabas Language through a z/OS terminal for a few months. That was not the most funny thing to be honest, but later on I started to participate in the design of a new project for managing the payrolls N34, then I could
 take advantage of my Java skills as well as learning Spring and Hibernate frameworks.</p>
                     <p>
                         <ul>
                             <li>Java J2EE</li>
-                            <li>Natural Adabas</li>
-                            <li>Spring, Hibernate, PostgreSQL</li>
+                            <li><a href="http://www.softwareag.com/corporate/products/az/adabas_natural/">Natural Adabas</a></li>
+                            <li><a href="https://projects.spring.io/spring-framework/">Spring Framework</a>, <a href="http://hibernate.org/orm/">Hibernate</a>, PostgreSQL</li>
                         </ul>
                     </p>
                 </div>
@@ -146,11 +163,11 @@ take advantage of my Java skills as well as learning Spring and Hibernate framew
                     <span class="company">ITACyL</span>
                     <span class="when">February 2007 - November 2008</span></div>
                     <span class="where">Valladolid</span>
-                    <p>I have to say my first job as a Developer was funny and stimulating. It was as a Java Developer working in CARTOSAT, a big GIS project related to the agricultural sector. My tasks were creating algorithms in Java based on Swing and ArcGIS Framework against Geodatabases.</p>
+                    <p>I have to say my first job as a Developer was funny and stimulating. It was as a Java Developer working in <a href="http://www.itacyl.es/opencms_wf/export/sites/Extranet/informacion_al_ciudadano/base_gps/bases/galerias/Documentos/Herramienta_GIS_paremetrizada_de_apoyo_al_control_sobre_el_terreno.pdf">CARTOSAT</a>, a big GIS project related to the agricultural sector. My tasks were creating algorithms in Java based on Swing and ArcGIS Framework against Geodatabases.</p>
                     <p>
                         <ul>
-                            <li>Java J2SE, Swing</li>
-                            <li>ArcGIS SDK, ESRI Tools</li>
+                            <li>Java J2SE, <a href="http://docs.oracle.com/javase/7/docs/technotes/guides/swing/">Swing</a></li>
+                            <li><a href="https://developers.arcgis.com/java/">ArcGIS SDK</a>, <a href="http://www.esri.com/software/arcgis">ESRI Tools</a></li>
                         </ul>
                     </p>
                 </div>
@@ -173,12 +190,38 @@ take advantage of my Java skills as well as learning Spring and Hibernate framew
                         </ul>
                     </p>
                 </div>
-                
+                <div class="job_position">
+                    <span class="marker"></span>
+                </div>
                 
                </div>
             </section>
-                
-                
+            
+            <section class="me"  id="education">
+                <div class="row about">
+                    <div class="section"><span class="glyphicon glyphicon-check icon" aria-hidden="true"></span>Education</div>
+                    <div class="col-md-6">
+                       <div class="col-md-2">
+                           <img src="img/graduated.png" alt="" class="degree">
+                       </div>
+                        <div class="col-md-10">
+                            <span class="company"><a href="http://www.uemc.es">Bachelor of Computer Science</a></span>
+                            <h5>University Miguel de Cervantes</h5>
+                            <span class="where">Valladolid, Spain</span>
+                        </div>
+                    </div>  
+                    <div class="col-md-6">
+                        <div class="col-md-2">
+                            <img src="img/smalllogo.png" alt="" class="scrum">
+                        </div>
+                        <div class="col-md-10">
+                            <span class="company"><a href="resources/cert_IVAN_PEREZ_BREA.pdf" target="_blank">Scrum Manager certification</a></span>
+                            <span class="where">scrummanager.net</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <br>
         </div>
                
                
@@ -192,7 +235,39 @@ take advantage of my Java skills as well as learning Spring and Hibernate framew
         <div class="col-md-2"></div>
     </div>
     
-    <div class="row footer"></div>
+    <div class="row footer" id="contact">
+        
+        <div class="foot_title">Presence</div>
+        <div class="foot_subtitle">Where am I on the Internet?</div>
+        <div class="divider"></div>
+        <div class="row contact_info">
+        <div class="col-md-6">
+            <div class="interest">
+                <img src="img/mail.png" alt="mail" class="interest_icon">
+                <span class="contact"><a href="mailto:insalada@gmail.com">E-Mail</a></span>
+            </div>
+            <div class="interest">
+                <img src="img/linkedin.png" alt="linkedin" class="interest_icon">
+                <span class="contact"><a href="https://nl.linkedin.com/in/ivanperezbrea">Linkedin</a></span>
+            </div>
+            <div class="interest">
+                <img src="img/github4.png" alt="github" class="interest_icon github">
+                <span class="contact"><a href="https://github.com/insalada">GitHub</a></span>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="interest">
+                <img src="img/soundcloud11.png" alt="souncloud" class="interest_icon soundcloud">
+                <span class="contact"><a href="https://soundcloud.com/ivanperezbrea">SoundCloud Music</a></span>
+            </div>
+            <div class="interest">
+                <img src="img/flickr2.png" alt="flick" class="interest_icon flickr">
+                <span class="contact"><a href="https://www.flickr.com/photos/ipbsoft/">Flickr Photograpy</a></span>
+            </div>
+        </div>
+        </div>
+        <div class="divider"></div>
+    </div>
     
 </body>
 </html>
