@@ -288,3 +288,75 @@ p {
   float: none;
   vertical-align: top;
 }
+
+
+/*Media Queries*/
+@media (max-width: 768px) {   
+    .logo{
+        width: 25%;
+        margin: 10px 10px 10px 0px;
+    }
+    
+    .second-row{
+        margin-top: 10px;
+    }
+    
+    .form-header-info{
+        font-size: 1.6em;
+    }
+
+    
+}
+
+@media screen 
+  and (min-width: 320px) 
+  and (max-width: 640px) {
+
+
+        .about {
+            margin-top: 0px;
+            padding: 0px 0px 0px 20px;
+            border: 0px none white;
+            border-radius: 10px;
+        }
+
+        .photo_box {
+            width: 100%; 
+            text-align: center;
+            margin: 10px 10px 10px -15px!important;
+            padding: 0!important;
+        }
+      
+        .photo {
+            
+        }
+      
+      p {
+          margin-right: 25px;
+      }
+      
+      .when {
+          margin-right: 25px
+      }
+      
+      .contact_info {
+          margin: 0;
+          padding: 0;
+      }
+      
+      .divider {
+          margin-top: 20px;
+          margin-bottom: 20px;
+      }
+
+}
+
+/*MD size */
+@media (min-width: 768px) and (max-width: 992px) {
+    
+}
+
+
+@media (min-width: 1200px) {
+
+}
