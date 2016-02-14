@@ -350,6 +350,12 @@ p {
           margin-top: 20px;
           margin-bottom: 20px;
       }
+      
+      .title_row {
+        height: 150px;
+    /*margin-bottom: 10px;*/
+}
+
 
 }
 
