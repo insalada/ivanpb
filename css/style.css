@@ -12,6 +12,7 @@ h1 {
 }
 
 h2 {
+    margin-top: -10px;
     font-size: 2em;
     color: grey;
 }
@@ -35,6 +36,7 @@ h5 {
     padding: 0px 0px 0px 0px;
     background-color: #363B34;
     color: white;
+    height: 180px;
     /*margin-bottom: 10px;*/
 }
 
